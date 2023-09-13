@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+}
+
+.head{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logo{
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.navbar{
+    width: 85%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    background-color: transparent;
+    border: 0;
+    color: whitesmoke;
+    padding: 10px 25px;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.content{
+    color: whitesmoke;
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.sidebar{
+    background-color: #a69cb1;
+    width: 3%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    right:0;
+    
+
+}
+
+.sociallink{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    margin-left: 30px;
+    cursor: pointer;
+    
+}
+
+.useful{
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%);
+    margin-left: 30px;
+    cursor: pointer;
+}
+.sociallink img, .useful img{
+    width: 35px;
+    
+}
+
+.menu{
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 10px
+}
+.starfish img{
+  width: 100px;
+  animation: starfish 7s linear infinite;
+}
+.starfish{
+   width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position:absolute;
+    bottom: 0;
+}
+
+@keyframes starfish 
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity:0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-90vh);
+    }
+}
+
+.starfish img:nth-child(1)
+{
+    width: 80px;
+    animation-delay: 2.5s;
+}
+.starfish img:nth-child(2)
+{
+    width: 90px;
+    animation-delay: 3s;
+}
+.starfish img:nth-child(3)
+{
+    width: 100px;
+    animation-delay: 3.5s;
+}
+.starfish img:nth-child(4)
+{
+    width: 120px;
+    animation-delay: 4s;
+}
